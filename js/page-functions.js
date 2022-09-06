@@ -35,3 +35,13 @@ function globalResize() {
 	
 }
 
+$('#volume').click(function(){
+    if( $("#video").prop('muted') ) {
+          $("#video").prop('muted', false);
+          $(this).text('Mute');
+    } else {
+      $("#video").prop('muted', true);
+      $(this).text('Unmute');
+    }
+});
+

@@ -1,6 +1,8 @@
 /* FONTS
 Listas fuentes para uso
 --- */
+@import "fontawesome/fontawesome.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap');
 
 /* @group SHARED STRUCTURES AND STYLES
 ------------------------------------ */
@@ -20,8 +22,27 @@ a, button { cursor: pointer;
 @supports(object-fit: cover) {
   .img-box > img { height: 100%!important; }
 }
+
+/*Colors*/
+
+$white: #FFFFFF;
+$blue: #0064A8;
+$blue-dark: #162E5A;
+$light-blue: #10CCEC;
+$yellow: #F8CE75;
+$brown: #707070;
+
 /* General Text
 ----------------------*/
+
+#volume {
+  cursor:pointer;
+  padding: 10px 20px;
+  background:#000;
+  color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+}
 
 @media only screen
 and (min-width : 769px) {
