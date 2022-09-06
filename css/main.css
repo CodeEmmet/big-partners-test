@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* FONTS
+Listas fuentes para uso
+--- */
+/* @group SHARED STRUCTURES AND STYLES
+------------------------------------ */
+body {
+  overflow-x: hidden;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+a, button {
+  cursor: pointer;
+  -webkit-transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, -webkit-transform 0.3s linear;
+  -webkit-transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, -webkit-box-shadow 0.3s linear, -webkit-transform 0.3s linear;
+  transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, -webkit-box-shadow 0.3s linear, -webkit-transform 0.3s linear;
+  transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, transform 0.3s linear;
+  transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, transform 0.3s linear, -webkit-box-shadow 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.video-box,
+.img-box {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-box > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  height: 100%;
+  width: 100% !important;
+}
+
+.img-box video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  height: 100%;
+  width: 100% !important;
+}
+
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
+  .img-box > img {
+    height: 100% !important;
+  }
+}
+
+/* General Text
+----------------------*/
+/* @end */
+/* @group RESET GENERAL DE TAMAÑO
+------------------------------------ */
+@media only screen and (min-width: 769px) {
+  .mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 768px) {
+  .no-mobile {
+    display: none !important;
+  }
+  /* html { font-size: 7px; } */
+}
+
+@media only screen and (min-width: 0) and (max-width: 600px) {
+  /* html { font-size: 5px; } */
+}
+
+/* @end */
+/* --- */
+/*# sourceMappingURL=main.css.map */
