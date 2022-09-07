@@ -35,13 +35,24 @@ function globalResize() {
 	
 }
 
+// Volume Video
 $('#volume').click(function(){
     if( $("#video").prop('muted') ) {
           $("#video").prop('muted', false);
-          $(this).text('Mute');
+          $(this).toggleClass('volumeOff');
     } else {
       $("#video").prop('muted', true);
-      $(this).text('Unmute');
+      $(this).toggleClass('volumeOff');
     }
 });
 
+// Slick Slider
+$(document).ready(function(){
+  $('.slider-mobile').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+  });
+});
